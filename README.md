@@ -6,7 +6,11 @@ Install Node and make sure you have the latest npm with `npm install npm -g`.
 
 Install other global dependencies with with `npm install windows-build-tools gulp -g`.
 
-Install local dependencies
+Install local dependencies with `npm install`.
 
-## Run the app
-Run `gulp watch` to start up the server. It will launch in a browser at [localhost:3000](http://localhost:3000), but to log in with more than one user, go to [localhost:3001](http://localhost:3001). 
+## Run the server
+Run `gulp server` from the primary directory to start up the server. Next, to run the the angular application, `cd ng` and run `gulp serve`. To start up the React application, go back to the root directory and `cd react` followed by `gulp watch`.
+  
+#### TODO:
+In the future, we can simplify this start up process by creating a single task to run everything. 
+  
